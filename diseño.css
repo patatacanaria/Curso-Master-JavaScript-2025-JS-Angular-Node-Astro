@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+.logo {
+  border: none;
+  border-radius: 10px;
+  position: fixed;
+  top: 2%;
+  left: 2%;
+  width: 20%;
+  height: 10%;
+  z-index: 1000;
+}
+body {
+  background-image: url('Imagenes/5594016.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+form {
+  width: 400px; /* o lo que necesites */
+  height: 300px;
+  background-color: #6e6e6e3f;
+  border-radius: 10px;
+  padding: 50px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+input {
+  border: 0px;
+  border-radius: 10px;
+  padding: 6px 30px;
+
+}
+h1 {
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+h3 {
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+button{
+  background-color: #3f3f3f50;
+  border: 0px;
+  border-radius: 10px;
+  color: white;
+  padding: 20px 45px;
+}
