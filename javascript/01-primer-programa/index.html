@@ -3,18 +3,69 @@
 <head>
     <meta charset="UTF-8" />
     <title>Primer programa</title>
-<script src="main.js"> </script>
+<script src="dom.js" defer> </script>
+
+<style>
+    .tooltip {
+      position: absolute;
+      background-color: #f9f9f9;
+      color: #333;
+      border: 1px solid #ccc;
+      padding: 8px;
+      border-radius: 6px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      font-size: 14px;
+      z-index: 1000;
+      display: none;
+    }</style>
 </head>
 <body>
-    <h1>Variables javascript</h1>
-    <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        
-    </ul>
+    <div id="caja"> Caja</div>
+    <h1 id="titulo">Uso del DOM JAvascript</h1>
+
+    <section>
+           <article class="articulo">
+            <h3 class="Titulosart">TItulo articulo</h3>
+            <p>
+               Contenido del articulo
+            </p>
+           </article>
+           <article class="articulo">
+           <h3 class="Titulosart">TItulo articulo</h3>
+            <p>
+               Contenido del articulo
+            </p>
+           </article>
+           <article class="articulo">
+            <h3 class="Titulosart">TItulo articulo</h3>
+            <p>
+               Contenido del articulo
+            </p>
+           </article>
+           <article class="articulo">
+            <h3 class="Titulosart">TItulo articulo</h3>
+            <p>
+               Contenido del articulo
+            </p>
+           </article>
+    </section>
+
+    <button id="boton">HAZME CLICK</button>  
+      <br/>  <br/>
+    <button id="boton1">HAZME CLICK</button>
+   <br/>
+   <br/>
+    <form action="submit" method="get" id="iniciosesion">
+
+      <label for="email">Email</label>
+      <input type="email" name="" id="email" placeholder="example@gmail.com">
+      <div id="tooltip" class="tooltip">Debe ser un email válido</div>
+<br/>
+      <label for="contraseña">Contraseña</label>
+      <input type="password" name="" id="contraseña">
+      <br/>
+      <input type="submit" value="Enviar"/>
+    </form>
+    
 </body>
 </html>

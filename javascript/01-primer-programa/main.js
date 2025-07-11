@@ -338,3 +338,70 @@ let nuevoArray = ejemploarray1.map(function(nombre) {
     return nombre.toUpperCase();
 }  );        
 console.log(nuevoArray);     
+
+// arrays multideimensionales
+
+let categorias = ["terror","accion","aventura"];
+let titulos = ["GTA","WOW","indiana jones","Resident evil"];
+let videojuegos = [categorias,titulos];
+
+// acceder
+// accedemos a categorias y dentro de esta al dato numero 1.
+videojuegos[0][1];
+
+// Array bidimensionales
+
+let tabla =[["Producto","cantidad","precio"],["pc",2,250],["Movil",4,99]]; // acceder
+
+tabla[1][1];
+
+// Funciones ARRAYS
+
+// Añadir elementos a un array  .PUSH
+
+categorias.push("RPG");
+
+// Eliminar ultimo elemento de array .POP
+
+categorias.pop();
+
+// agregar element principio array .unshift
+
+categorias.unshift("Arcade");
+
+// Eliminar el primer elemento .shift
+
+categorias.shift();
+
+// Metodo busqueda aparacion valor de un array .indexOf  -- si el valor no existe devolvera como valor -1
+
+categorias.indexOf("accion");
+
+// Busqueda si existe un elemento  - true or false
+
+categorias.includes("accion");
+
+// Reducir un array a un solo valor REDUCE
+
+console.log(categorias.reduce((total,actual)=>total +", "+ actual));
+
+// ordenar array alfabeticamente .sort
+
+categorias.sort();
+
+// Ordenar a la inversa
+
+categorias.reverse();
+
+// Combinar arrays .concat
+
+categorias.concat(titulos);
+
+// Convertir array a string .join
+
+categorias.join(", "); 
+
+// ELiminar dimensiones de un array
+
+tabla.flat(2); // El numero elige las dimensiones que queires eliminar
+
